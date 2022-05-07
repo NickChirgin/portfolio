@@ -1,0 +1,13 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Sass Compile",
+            "type": "shell",
+            "command": "sass ./styles/components/folder-browser.scss:./styles/components/folder-browser.css ./styles/components/widget.scss:./styles/components/widget.css",
+            "group": "build"
+        }
+    ]
+}

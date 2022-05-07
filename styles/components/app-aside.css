@@ -1,0 +1,75 @@
+.app-aside {
+    border-right: 1px solid var(--color-border--main);
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.app-aside li {
+    border-right: none;
+}
+
+.app-aside__tabs {
+    border-right: 1px solid var(--color-border--main);
+}
+
+.app-aside__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.widget-header {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.625rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border--main);
+}
+
+
+.widget-header img {
+    width: 8.5px;
+    height: 6px;
+}
+
+.widget-category {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.625rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.widget-category a {
+    color: inherit;
+}
+
+.widget-category img:first-child {
+    width: 12.73px;
+    height: 7.78px;
+}
+
+img.folder {
+    width: 15px;
+    height: 13px;
+}
+
+.category-chosen {
+    color: white;
+}
+
+#education {
+    border-bottom: 1px solid var(--color-border--main);
+    padding-bottom: 3rem;
+}
+
+#email img {
+    width: 15px;
+    height: 13px;
+}
