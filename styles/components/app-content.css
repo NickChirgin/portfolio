@@ -1,0 +1,30 @@
+.app-content {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--color-border--main);
+    width: 100%;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.info::-webkit-scrollbar {
+    width: 10em;
+    background-color: yellow;
+    height: 100%;
+    border-left: 1px solid var(--color-border--main);
+}
+
+.info::-webkit-scrollbar-thumb {
+    max-height: 2rem;
+}
