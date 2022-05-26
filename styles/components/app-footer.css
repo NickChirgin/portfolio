@@ -21,3 +21,11 @@ app-navigation--opacity-hover a:hover {
 .app-footer a {
     padding-right: 1.83em;
 }
+
+.unique {
+    border-right: 0;
+}
+
+ul span {
+    vertical-align: middle;
+}
