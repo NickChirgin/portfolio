@@ -1,0 +1,47 @@
+@import "./global/reset.css";
+@import "./components/colors.css";
+@import "./components/fonts.css";
+@import "./components/layout.css";
+
+
+@import "./components/app-header.css";
+@import "./components/app-main.css";
+@import "./components/app-aside.css";
+@import "./components/app-content.css";
+@import "./components/app-navigation.css";
+@import "./components/app-footer.css";
+@import "./components/about-page.css";
+
+@import "./components/widget.css";
+@import "./components/folder-browser.css";
+
+
+
+
+
+body {
+    background-color: var(--color-body--base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.app {
+    width: calc(100% - var(--body-inset) * 2);
+    height: calc(100% - var(--body-inset) *2);
+    background: var(--color-main--lighter);
+    border: 1px solid var(--color-border--main);
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+}

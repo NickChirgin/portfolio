@@ -1,0 +1,63 @@
+.somediv {
+    float: left;
+    clear: none;
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* min-width: calc(50%-19.375rem); */
+    width: 100%;
+    align-content: center;
+    padding-left: 15rem;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.hello {
+    min-width: 100%;
+}
+
+.snake-game {
+    box-sizing: border-box;
+    min-width: 50%;
+}
+
+.hello p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.hello h1 {
+    font-size: 62px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 32px;
+    color: #4D5BCE;
+}
+
+.github-link {
+    color: #fff;
+}
+
+.blue {
+    color: #4D5BCE;
+}
+
+.green {
+    color: #43D9AD;
+}
+
+.orange a {
+    color: #E99287;
+    text-decoration: none;
+}
+
+.shadow {
+    width: 80%;
+    height: 80%;
+}
