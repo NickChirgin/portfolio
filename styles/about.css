@@ -5,15 +5,11 @@
 
 
 @import "./components/app-header.css";
-@import "./components/app-main.css";
-@import "./components/app-aside.css";
-@import "./components/app-content.css";
 @import "./components/app-navigation.css";
 @import "./components/app-footer.css";
 @import "./components/about-page.css";
 
 @import "./components/widget.css";
-@import "./components/folder-browser.css";
 
 
 

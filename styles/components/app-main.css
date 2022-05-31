@@ -1,6 +1,5 @@
 .app-main {
-    flex: 1 1 auto;
-
+    flex: 1;
     display: grid;
     grid-template-columns: var(--layout-aside-width) 1fr;
     width: 100%;
