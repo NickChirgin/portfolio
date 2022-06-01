@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <header class="app-header">
+            <div class="app-header__brand">
+                <h1 class="site-brand">nick-chirgin</h1>
+            </div>
+            <div class="app-header__navigation">
+                <nav class="app-navigation">
+                    <ul>
+                        <li><a href="/about.html">_hello</a></li>
+                        <li><a href="/index.html">_about me</a></li>
+                        <li><a href="">_projects</a></li>
+                    </ul>
+                </nav>
+                <nav class="app-navigation">
+                    <ul>
+                        <li class="is_selected"><a href="./contact.html">_contact me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="app-main">
+            <aside class="app-aside">
+                <div class="app-aside__content">
+                    <div class="widget-header">
+                        <img src="./styles/components/src/Vector.svg" alt="">
+                        <span>contacts</span>
+                    </div>
+                    <div class="widget-category" id="email">
+                        <img src="./styles/components/src/mail-icon.svg" alt="">
+                        <a href="mailto:nickchirgin@gmail.com">nickchirgin</a>
+                    </div>
+                </div>
+            </aside>
+            <div class="app-content">
+                <div class="ultra-header">
+                    <div class="info-block--header">
+                        <div id="tab">contacts</div>
+                        <img src="./styles/components/src/close-icon.svg" />
+                    </div>
+                    <div class="info-block--header"></div>
+                </div>
+                <div class="info-block">
+                    <div class="info">
+                        <form action="" type="submit">
+                            <fieldset>
+                                <label for="fname">  _name:</label><br>
+                                <input type="text" id="fname" name="fname" required placeholder="   Jonathan Davis"><br>
+                            </fieldset>
+                            <fieldset>
+                                <label for="email1">  _email:</label><br>
+                                <input type="email" id="email1" name="email1" required placeholder="   jonathan-davis@gmail.com"><br>
+                           </fieldset>
+                           <fieldset>
+                            <label for="message1">  _message:</label><br>
+                            <input type="text" id="message1" name="message1" required placeholder="Hey! Just checked your website and it looks awesome! Also, I checked your articled on Medium. Lerned a few nice tips. Thanks!"><br>
+                       </fieldset>
+                        </form>
+                        <button type="submit" value="submit-message" id="btnSubmit">submit-message</button>
+                    </div>
+
+                    <div class="code-snippet-block">
+                        <div class="app-content__header"></div>
+                        <div class="code-snippet">
+                            //Code snippet showcase:
+                        </div>
+                        <div class="img"><img src="./styles/components/src/Snippet-1.svg" /></div>
+                        <div class="img"><img src="./styles/components/src/Snippet-2.svg" /></div>
+                        <div class="scroll">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer class="app-footer">
+            <nav class="app-navigation app-navigation--opacity-hover">
+                <ul>
+                    <li><a href=""><span>find me in:</span></a></li>
+                    <li><a href=""><img src="./styles/components/src/telegram.svg" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/nickchirgin/"><img src="./styles/components/src/linked.svg"
+                                alt=""></a></li>
+                </ul>
+            </nav>
+            <nav class="app-navigation">
+                <ul>
+                    <li class="menu-item-icon"><a href="https://github.com/NickChirgin" class="unique"><img
+                                src="./styles/components/src/github.svg" alt=""></a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

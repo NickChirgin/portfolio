@@ -1,0 +1,177 @@
+@import "./global/reset.css";
+@import "./components/colors.css";
+@import "./components/fonts.css";
+@import "./components/layout.css";
+
+@import "./components/app-header.css";
+@import "./components/app-main.css";
+@import "./components/app-content.css";
+@import "./components/app-navigation.css";
+@import "./components/app-footer.css";
+
+@import "./components/widget.css";
+@import "./components/folder-browser.css";
+
+body {
+    background-color: var(--color-body--base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.app {
+    width: calc(100% - var(--body-inset) * 2);
+    height: calc(100% - var(--body-inset) *2);
+    background: var(--color-main--lighter);
+    border: 1px solid var(--color-border--main);
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.app-aside {
+    border-right: 1px solid var(--color-border--main);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div ol{
+    height: max-content;
+}
+
+.app-aside li {
+    border-right: none;
+}
+
+.app-aside__tabs {
+    border-right: 1px solid var(--color-border--main);
+}
+
+.app-aside__tabs a {
+    border-right: none;
+}
+
+.app-aside__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.widget-header {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.625rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border--main);
+}
+
+
+.widget-header img {
+    width: 8.5px;
+    height: 6px;
+}
+
+.widget-category {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.625rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.widget-category a {
+    color: inherit;
+}
+
+.widget-category img:first-child {
+    width: 12.73px;
+    height: 7.78px;
+}
+
+img.folder {
+    width: 15px;
+    height: 13px;
+}
+
+.category-chosen {
+    color: white;
+}
+
+#education {
+    border-bottom: 1px solid var(--color-border--main);
+    padding-bottom: 3rem;
+}
+
+#email img {
+    width: 15px;
+    height: 13px;
+}
+
+.info{
+    padding-left: 9rem;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+form{
+    padding-top: 2rem;
+}
+input{
+    box-sizing: border-box;
+    background: #011221;
+    border: 1px solid #1E2D3D;
+    border-radius: 8px;
+    color: #465E77;
+    margin: 0.5rem;
+    height: 2.6rem;
+    width: 21rem;
+}
+
+#message1{
+    height: 9rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#btnSubmit{
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 14px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: #1C2B3A;
+    color: #fff;
+    padding: 0.25rem;
+    left: 0.5rem;
+    box-shadow: none;
+    border: 0;
+    margin: 0;
+}
+
+
+
+
+
