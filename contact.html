@@ -56,7 +56,7 @@
                 </div>
                 <div class="info-block">
                     <div class="info">
-                        <form action="" type="submit">
+                        <form action="http://127.0.0.1:8000" type="submit" name="theForm" id="forma" method="post">
                             <fieldset>
                                 <label for="fname">  _name:</label><br>
                                 <input type="text" id="fname" name="fname" required placeholder="   Jonathan Davis"><br>
@@ -67,10 +67,12 @@
                            </fieldset>
                            <fieldset>
                             <label for="message1">  _message:</label><br>
-                            <textarea id="message1" name="message1" required placeholder="Hey! Just checked your website and it looks awesome! Also, I checked your articled on Medium. Lerned a few nice tips. Thanks!" cols="34" rows="5"></textarea><br>
-                       </fieldset>
+                            <textarea id="message1" name="message1" required placeholder="Hey! Just checked your website and it goplooks awesome! Also, I checked your article on Medium. Learnt a few nice tips. Thanks!" cols="34" rows="5"></textarea><br>
+                            </fieldset>
+                            <button type="submit" value="submit-message" id="btnSubmit">submit-message</button>
                         </form>
-                        <button type="submit" value="submit-message" id="btnSubmit">submit-message</button>
+                        <!-- <input type="submit" name="btnSubmit" id="btnSubmit" value="submit-message"> -->
+                        
                     </div>
 
                     <div class="code-snippet-block">
@@ -113,7 +115,8 @@
         </footer>
     </div>
 
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
+    <script src="./emailHandler.js"></script>
 </body>
 
 </html>
