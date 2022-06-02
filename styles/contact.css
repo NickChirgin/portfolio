@@ -130,7 +130,7 @@ img.folder {
     align-items: flex-start;
 }
 form{
-    padding-top: 2rem;
+    padding-top: 8rem;
 }
 input{
     box-sizing: border-box;
@@ -141,12 +141,24 @@ input{
     margin: 0.5rem;
     height: 2.6rem;
     width: 21rem;
+    font-size: 1rem;
 }
 
 #message1{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    box-sizing: border-box;
+    background: #011221;
+    border: 1px solid #1E2D3D;
+    border-radius: 8px;
+    color: #465E77;
+    margin: 0.5rem;
     height: 9rem;
     display: flex;
     flex-wrap: nowrap;
+    font-size: 1rem;
+    box-shadow: 0px 0px 0px 2px rgba(96, 123, 150, 0.3);
+    resize: none;
 }
 
 #btnSubmit{
@@ -165,11 +177,46 @@ input{
     background: #1C2B3A;
     color: #fff;
     padding: 0.25rem;
-    left: 0.5rem;
+    left: 0.25rem;
     box-shadow: none;
     border: 0;
     margin: 0;
 }
+#btnSubmit:hover{
+    cursor: pointer;
+}
+
+.pink{
+    color: #C98BDF;
+}
+
+
+.ol{
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 8rem;
+    width: 95%;
+    height: auto;
+    padding-left: 5rem;
+}
+.blue {
+    color: #4D5BCE;
+}
+
+.orange {
+    color: #FEA55F;
+}
+
+.shift span:first-child{
+    padding-left: .75rem;
+}
+
+.extra-padding{
+    position: relative;
+    display: flex;
+    padding-left: 2rem;
+}
+
 
 
 

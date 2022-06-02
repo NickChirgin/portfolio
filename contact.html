@@ -67,7 +67,7 @@
                            </fieldset>
                            <fieldset>
                             <label for="message1">  _message:</label><br>
-                            <input type="text" id="message1" name="message1" required placeholder="Hey! Just checked your website and it looks awesome! Also, I checked your articled on Medium. Lerned a few nice tips. Thanks!"><br>
+                            <textarea id="message1" name="message1" required placeholder="Hey! Just checked your website and it looks awesome! Also, I checked your articled on Medium. Lerned a few nice tips. Thanks!" cols="34" rows="5"></textarea><br>
                        </fieldset>
                         </form>
                         <button type="submit" value="submit-message" id="btnSubmit">submit-message</button>
@@ -75,12 +75,20 @@
 
                     <div class="code-snippet-block">
                         <div class="app-content__header"></div>
-                        <div class="code-snippet">
-                            //Code snippet showcase:
-                        </div>
-                        <div class="img"><img src="./styles/components/src/Snippet-1.svg" /></div>
-                        <div class="img"><img src="./styles/components/src/Snippet-2.svg" /></div>
-                        <div class="scroll">
+                        <div class="ol">
+                            <ol id="interests1">
+                                <li><span class="pink">const </span><span class="blue">button </span><span class="pink">= </span><span class="blue">document.querySelector </span>(<span class="orange">'#sendBtn'</span>);</li>
+                                <li></li>
+                                <li><span class="pink">const </span><span class="blue">message </span><span class="pink">= </span>{</li>
+                                <li class="shift"><span class="blue">name</span>: <span class="orange">"Jonathan Davis"</span>,</li>
+                                <li class="shift"><span class="blue">email</span>: <span class="orange">"jonathan-davis@gmail.com"</span>,</li>
+                                <li class="shift"><span class="blue">message</span>: <span class="orange">"Hey! Just checked your website and it &nbsp;&nbsp;&nbsp;&nbsp;looks awesome! Also, I checked your article on&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Medium. Learnt a few nice tips. Thanks!"</span>,</li>
+                                <li class="shift"><span>date:</span><span class="orange">"Thu 21 Apr"</span></li>
+                                <li>}</li>
+                                <li><span class="blue">button.addEventListener</span>('click', () => {</li>
+                                <li class="shift"><span class="blue">form.send</span>(<span class="blue">message</span>);</li>
+                                <li>})</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -109,3 +117,4 @@
 </body>
 
 </html>
+
