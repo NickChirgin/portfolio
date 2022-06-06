@@ -1,6 +1,23 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi import FastAPI
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from regex import F
+from starlette.responses import JSONResponse
+from pydantic import BaseModel
+from env import FROM_EMAIL, PASSWORD, TO_EMAIL
+
+
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    fname: str
+    email1: str
+    message1: str
+
 
 app = FastAPI()
 
@@ -15,12 +32,24 @@ app.add_middleware(
 )
 
 
-class Item(BaseModel):
-    fname: str
-    email1: str
-    message1: str
+@app.post("/api/forma")
+def create_item(item: Item):
+    msg = MIMEMultipart()
+    msg['From'] = FROM_EMAIL
+    msg['To'] = TO_EMAIL
+    msg['Subject'] = item.email1
+    message = item.message1
+    msg.attach(MIMEText(message))
 
+    mailserver = smtplib.SMTP('smtp.yandex.ru', 587)
+    # mailserver.ehlo()
+    mailserver.starttls()
+    # mailserver.ehlo()
+    mailserver.login(FROM_EMAIL, PASSWORD)
 
-@app.post("http://127.0.0.1:8000/")
-async def answer():
-    return {"message": "hello"}
+    mailserver.sendmail(FROM_EMAIL,
+                        TO_EMAIL, msg.as_string())
+
+    mailserver.quit()
+
+    return {'message': "email has been sent"}

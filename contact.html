@@ -56,7 +56,7 @@
                 </div>
                 <div class="info-block">
                     <div class="info">
-                        <form action="http://127.0.0.1:8000" type="submit" name="theForm" id="forma" method="post">
+                        <form action="" type="submit" name="theForm" id="forma" method="post">
                             <fieldset>
                                 <label for="fname">  _name:</label><br>
                                 <input type="text" id="fname" name="fname" required placeholder="   Jonathan Davis"><br>
@@ -71,7 +71,11 @@
                             </fieldset>
                             <button type="submit" value="submit-message" id="btnSubmit">submit-message</button>
                         </form>
-                        <!-- <input type="submit" name="btnSubmit" id="btnSubmit" value="submit-message"> -->
+                        <div class="thanks">
+                            <p id="ty">Thank you! 🤘</p>
+                            <p>Your message has been accepted. You will recieve answer really soon!</p>
+                            <button id="send-message">send-new-message</button>
+                        </div>
                         
                     </div>
 
@@ -82,10 +86,10 @@
                                 <li><span class="pink">const </span><span class="blue">button </span><span class="pink">= </span><span class="blue">document.querySelector </span>(<span class="orange">'#sendBtn'</span>);</li>
                                 <li></li>
                                 <li><span class="pink">const </span><span class="blue">message </span><span class="pink">= </span>{</li>
-                                <li class="shift"><span class="blue">name</span>: <span class="orange">"Jonathan Davis"</span>,</li>
-                                <li class="shift"><span class="blue">email</span>: <span class="orange">"jonathan-davis@gmail.com"</span>,</li>
-                                <li class="shift"><span class="blue">message</span>: <span class="orange">"Hey! Just checked your website and it &nbsp;&nbsp;&nbsp;&nbsp;looks awesome! Also, I checked your article on&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Medium. Learnt a few nice tips. Thanks!"</span>,</li>
-                                <li class="shift"><span>date:</span><span class="orange">"Thu 21 Apr"</span></li>
+                                <li class="shift"><span class="blue">name</span>: <span class="orange" id="name">"Jonathan Davis"</span>,</li>
+                                <li class="shift"><span class="blue">email</span>: <span class="orange" id="emailText">"jonathan-davis@gmail.com"</span>,</li>
+                                <li class="shift"><span class="blue">message</span>: <span class="orange" id="messageText">"Hey! Just checked your website and it &nbsp;&nbsp;&nbsp;&nbsp;looks awesome! Also, I checked your article on&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Medium. Learnt a few nice tips. Thanks!"</span>,</li>
+                                <li class="shift"><span>date:</span><span class="orange dateNow">"Thu 21 Apr"</span></li>
                                 <li>}</li>
                                 <li><span class="blue">button.addEventListener</span>(<span class="orange">'click'</span>, () <span class="pink">=></span> {</li>
                                 <li class="shift"><span class="blue">form.send</span>(<span class="blue">message</span>);</li>
