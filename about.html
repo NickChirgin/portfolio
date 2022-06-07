@@ -1,119 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="app">
-        <header class="app-header">
-            <div class="app-header__brand">
-                <h1 class="site-brand">nick-chirgin</h1>
+      <header class="app-header">
+        <div class="app-header__brand">
+          <h1 class="site-brand">nick-chirgin</h1>
+        </div>
+        <div class="app-header__navigation">
+          <nav class="app-navigation">
+            <ul>
+              <li class="is_selected"><a href="./about.html">_hello</a></li>
+              <li><a href="./index.html">_about me</a></li>
+              <li><a href="./projects.html">_projects</a></li>
+            </ul>
+          </nav>
+          <nav class="app-navigation">
+            <ul>
+              <li><a href="./contact.html">_contact me</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="app-main">
+        <div class="somediv">
+          <section class="description">
+            <div class="hello">
+              <p class="welcome">Hi all. I am</p>
+              <h1>Nikolay Chirgin</h1>
+              <h2>> Front-end Developer</h2>
             </div>
-            <div class="app-header__navigation">
-                <nav class="app-navigation">
-                    <ul>
-                        <li class="is_selected"><a href="./about.html">_hello</a></li>
-                        <li><a href="./index.html">_about me</a></li>
-                        <li><a href="">_projects</a></li>
-                    </ul>
-                </nav>
-                <nav class="app-navigation">
-                    <ul>
-                        <li><a href="./contact.html">_contact me</a></li>
-                    </ul>
-                </nav>
+
+            <div class="github-block">
+              <p class="desc">// complete the game to continue</p>
+              <p class="desc">// you can also see it on my Github page</p>
+              <p class="github-link">
+                <span class="blue">const </span
+                ><span class="green">githubLink</span> =
+                <span class="orange"
+                  ><a href="https://github.com/NickChirgin"
+                    >"https://github.com/NickChirgin"</a
+                  ></span
+                >
+              </p>
             </div>
-        </header>
-        <main class="app-main">
-            <div class="somediv">
-                <section class="description">
-                    <div class="hello">
-                        <p class="welcome">Hi all. I am</p>
-                        <h1>Nikolay Chirgin</h1>
-                        <h2>> Front-end Developer</h2>
-                    </div>
-
-                    <div class="github-block">
-                        <p class="desc">// complete the game to continue</p>
-                        <p class="desc">// you can also see it on my Github page</p>
-                        <p class="github-link"><span class="blue">const </span><span class="green">githubLink</span> =
-                            <span class="orange"><a
-                                    href="https://github.com/NickChirgin">"https://github.com/NickChirgin"</a></span>
-                        </p>
-                    </div>
-                </section>
-                <section class="snake-game">
-                    <div class="shadow">
-                        <div class="green-shadow"></div>
-                        <div class="blue-shadow"></div>
-                        <div class="images">
-                            <span style="--i: 1"><img src="./styles/components/src/code-snippet 2.jpg" alt=""></span>
-                            <span style="--i: 2"><img src="./styles/components/src/code-snippet 2.jpg" alt=""></span>
-                            <span style="--i: 3"><img src="./styles/components/src/code-snippet 2.jpg" alt=""></span>
-                            <span style="--i: 4"><img src="./styles/components/src/code-snippet 2.jpg" alt=""></span>
-                            <span style="--i: 5"><img src="./styles/components/src/code-snippet 2.jpg" alt=""></span>
-                            <span style="--i: 6"><img src="./styles/components/src/code-snippet 2.jpg" alt=""></span>
-                            <span style="--i: 7"><img src="./styles/components/src/code-snippet 2.jpg" alt=""></span>
-                        </div>
-                        <!-- <div class="gamefield">
-                            <div class="actual-field">
-                                <canvas id="field"></canvas>
-                                <img src="./styles/components/src/bolt-up-left.svg" alt="" class="bolt1">
-                                <img src="./styles/components/src/bolt-up-left.svg" alt="" class="bolt2">
-                                <img src="./styles/components/src/bolt-up-left.svg" alt="" class="bolt3">
-                                <img src="./styles/components/src/bolt-up-left.svg" alt="" class="bolt4">
-                                <button id="start">start-game</button>
-                            </div>
-                            <div class="rules">
-                                <p>// use keyboard</p>
-                                <p>// arrows to play</p>
-                                <img src="./styles/components/src/Up Arrow.svg" alt="" id="up-img">
-                                <div class="img-div">
-                                    <img src="./styles/components/src/Left Arrow.svg" alt="" id="left-img">
-                                    <img src="./styles/components/src/Down Arrow.svg" alt="" id="down-img">
-                                    <img src="./styles/components/src/Right Arrow.svg" alt="" id="right-img">
-                                </div>
-                                <p id="food">// food left</p>
-                            </div>
-
-
-                            <div class="food">
-
-                            </div>
-                        </div> -->
-                        
-                    </div>
-                </section>
+          </section>
+          <section class="snake-game">
+            <div class="shadow">
+              <div class="green-shadow"></div>
+              <div class="blue-shadow"></div>
+              <div class="images">
+                <span style="--i: 1"
+                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
+                /></span>
+                <span style="--i: 2"
+                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
+                /></span>
+                <span style="--i: 3"
+                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
+                /></span>
+                <span style="--i: 4"
+                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
+                /></span>
+                <span style="--i: 5"
+                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
+                /></span>
+                <span style="--i: 6"
+                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
+                /></span>
+                <span style="--i: 7"
+                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
+                /></span>
+                <span style="--i: 8"
+                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
+                /></span>
+              </div>
             </div>
-        </main>
-        <footer class="app-footer">
-            <nav class="app-navigation app-navigation--opacity-hover">
-                <ul>
-                    <li><a href=""><span>find me in:</span></a></li>
-                    <li><a href=""><img src="./styles/components/src/telegram.svg" alt=""></a></li>
-                    <li><a href="https://www.linkedin.com/in/nickchirgin/"><img src="./styles/components/src/linked.svg"
-                                alt=""></a></li>
-                </ul>
-            </nav>
-            <nav class="app-navigation">
-                <ul>
-                    <li class="menu-item-icon"><a href="https://github.com/NickChirgin" class="unique"><img
-                                src="./styles/components/src/github.svg" alt=""></a></li>
-                </ul>
-            </nav>
-        </footer>
+          </section>
+        </div>
+      </main>
+      <footer class="app-footer">
+        <nav class="app-navigation app-navigation--opacity-hover">
+          <ul>
+            <li>
+              <a href=""><span>find me in:</span></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="./styles/components/src/telegram.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/nickchirgin/"
+                ><img src="./styles/components/src/linked.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="app-navigation">
+          <ul>
+            <li class="menu-item-icon">
+              <a href="https://github.com/NickChirgin" class="unique"
+                ><img src="./styles/components/src/github.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </div>
     <script src="snake-game.js"></script>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>

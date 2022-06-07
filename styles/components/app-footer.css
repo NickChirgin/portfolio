@@ -1,31 +1,32 @@
 .app-footer {
-    border-top: 1px solid var(--color-border--main);
-    display: flex;
-    justify-content: space-between;
+  border-top: 1px solid var(--color-border--main);
+  display: flex;
+  justify-content: space-between;
 }
 
 .app-footer .app-navigation {
-    --item-block--padding: 0.6rem;
+  --item-block--padding: 0.6rem;
 }
 
 app-navigation--opacity-hover a {
-    opacity: 0.4;
-    transition: 0.3s opacity;
+  opacity: 0.4;
+  transition: 0.3s opacity;
 }
 
 app-navigation--opacity-hover a:hover {
-    opacity: 1;
-    transition: 0.1s opacity;
+  opacity: 1;
+  transition: 0.1s opacity;
 }
 
 .app-footer a {
-    padding-right: 1.83em;
+  padding-right: 1.83em;
+  max-width: 156px;
 }
 
 .unique {
-    border-right: 0;
+  border-right: 0;
 }
 
 ul span {
-    vertical-align: middle;
+  vertical-align: middle;
 }
