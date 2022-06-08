@@ -36,7 +36,6 @@ a:hover {
   background: var(--color-main--lighter);
   border: 1px solid var(--color-border--main);
   border-radius: 0.5rem;
-
   display: flex;
   flex-direction: column;
 }
@@ -127,12 +126,6 @@ img.folder {
   height: 13px;
 }
 
-.info {
-  padding-left: 9rem;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: flex-start;
-}
 form {
   position: absolute;
   padding-top: 8rem;
@@ -261,4 +254,48 @@ input::placeholder {
   padding: 0;
   margin: 0;
   left: 0;
+}
+@media (max-width: 1280px) {
+  .app-aside {
+    display: none;
+  }
+  .ultra-header {
+    display: none;
+  }
+  .info {
+    width: 50%;
+  }
+}
+@media (max-width: 1000px) {
+  .app {
+    width: 90vw;
+  }
+  .app-main {
+    display: flex;
+    flex: 1 auto;
+  }
+  .info {
+    width: 100%;
+  }
+  .code-snippet-block {
+    display: none;
+  }
+  form {
+    width: 50%;
+  }
+  input {
+    width: 95%;
+  }
+  textarea {
+    width: 95%;
+  }
+}
+
+@media (max-width: 650px) {
+  .app {
+    width: 90vw;
+  }
+  form {
+    width: 70%;
+  }
 }

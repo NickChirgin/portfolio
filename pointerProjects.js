@@ -1,10 +1,3 @@
-// const header = document.querySelectorAll('.app-content__header')
-// const widgetHeader = document.querySelector("#personal")
-
-// header[0].append(widgetHeader.cloneNode(true))
-// header.style.width = '100%'
-// console.log(header)
-
 const dropdown = document.querySelector('#dropdown')
 const header = document.querySelector('header')
 const appNav = document.querySelectorAll('.app-navigation')
@@ -13,6 +6,7 @@ const snakeGame = document.querySelector('.snake-game')
 const appMain = document.querySelector('.app-main')
 const form = document.querySelector('form')
 const infoBlock = document.querySelector('.info-block')
+const infoBlockHeader = document.querySelector('.info-block--header')
 
 dropdown.addEventListener('pointerdown', e =>{
     if (header.classList.contains('dropdown')){
@@ -31,18 +25,14 @@ dropdown.addEventListener('pointerdown', e =>{
         appNav[2].style.display = 'none'
         appNav[3].style.display = 'none'
     }
-    if (description.style.display === 'flex' || description.style.display === ''){
-        description.style.display = 'none'
-    } else{
-        description.style.display = 'flex'
-    }
-
     if (infoBlock.style.display === ''){
         infoBlock.style.display = 'none'
     } else{
         infoBlock.style.display = ''
     }
+    if (infoBlockHeader.style.display === ''){
+        infoBlockHeader.style.display = 'none'
+    } else{
+        infoBlockHeader.style.display = ''
+    }
 })
-
-1 === '1'
-1 == '1'

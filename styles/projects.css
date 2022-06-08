@@ -331,7 +331,7 @@ input::placeholder {
 .project-description button {
   position: relative;
   left: 6%;
-  width: 30%;
+  width: 6rem;
   height: auto;
   padding: 2%;
   background-color: #1c2b3a;
@@ -360,4 +360,47 @@ ul > li span {
 
 .widget-category:first-child {
   margin-top: 1rem;
+}
+@media (max-width: 1280px) {
+  .app {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .app-content {
+    border: none;
+  }
+  .app-aside {
+    display: none;
+  }
+  .info-block {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+    width: 100%;
+  }
+  .project {
+    width: 40%;
+    aspect-ratio: 1/1;
+    padding: 2rem;
+    min-width: 291px;
+    min-height: 328px;
+  }
+  #tab {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .info-block--header img {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .app {
+    width: 90vw;
+  }
 }

@@ -13,31 +13,88 @@
 @import "./components/widget.css";
 @import "./components/folder-browser.css";
 
-
-
 body {
-    background-color: var(--color-body--base);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  background-color: var(--color-body--base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .app {
-    width: calc(100% - var(--body-inset) * 2);
-    height: calc(100% - var(--body-inset) *2);
-    background: var(--color-main--lighter);
-    border: 1px solid var(--color-border--main);
-    border-radius: 0.5rem;
+  width: calc(100% - var(--body-inset) * 2);
+  height: calc(100% - var(--body-inset) * 2);
+  background: var(--color-main--lighter);
+  border: 1px solid var(--color-border--main);
+  border-radius: 0.5rem;
 
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1280px) {
+  .app {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .app-content {
+    border: none;
+  }
+  .app-aside {
+    display: none;
+  }
+  .info-block {
+    position: relative;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
+    border: none;
+    align-items: center;
+    width: 100%;
+  }
+  .project {
+    width: 40%;
+    aspect-ratio: 1/1;
+    padding: 2rem;
+    min-width: 291px;
+    min-height: 328px;
+  }
+  #tab {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .info-block--header {
+    border-right: none;
+  }
+  .info {
+    width: 100%;
+  }
+  #bio1 {
+    width: 100%;
+  }
+  .code-snippet-block {
+    width: 100%;
+  }
+
+  .info-block--header img {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .app {
+    width: 90vw;
+  }
+  .info-block li {
+    font-size: 14px;
+  }
 }
