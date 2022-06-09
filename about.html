@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,8 +28,8 @@
         <div class="app-header__navigation">
           <nav class="app-navigation">
             <ul>
-              <li class="is_selected"><a href="./about.html">_hello</a></li>
-              <li><a href="./index.html">_about me</a></li>
+              <li><a href="./index.html">_hello</a></li>
+              <li class="is_selected"><a href="./about.html">_about me</a></li>
               <li><a href="./projects.html">_projects</a></li>
             </ul>
           </nav>
@@ -41,59 +41,142 @@
         </div>
       </header>
       <main class="app-main">
-        <div class="somediv">
-          <section class="description">
-            <div class="hello">
-              <p class="welcome">Hi all. I am</p>
-              <h1>Nikolay Chirgin</h1>
-              <h2>> Web-Developer</h2>
+        <aside class="app-aside">
+          <div class="app-aside__tabs">
+            <nav class="app-navigation app-navigation-vertical">
+              <ul>
+                <li>
+                  <a href=""
+                    ><img src="./styles/components/src/professional.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./styles/components/src/personal.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./styles/components/src/gaming.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="app-aside__content">
+            <div class="widget-header" id="personal">
+              <img src="./styles/components/src/Vector.svg" alt="" />
+              <span>personal-info</span>
+            </div>
+            <div class="widget-category category-chosen" id="bio">
+              <img src="./styles/components/src/arrow.svg" alt="" />
+              <img
+                class="folder"
+                src="./styles/components/src/pink_folder.svg"
+                alt=""
+              />
+              <a href="#bio1">bio</a>
+            </div>
+            <div class="widget-category" id="interests">
+              <img src="./styles/components/src/arrow.svg" alt="" />
+              <img
+                class="folder"
+                src="./styles/components/src/green_folder.svg"
+                alt=""
+              />
+              <a href="#interests1">interests</a>
+            </div>
+            <div class="widget-category" id="education">
+              <img src="./styles/components/src/down-arrow.svg" alt="" />
+              <img
+                class="folder"
+                src="./styles/components/src/blue_folder.svg"
+                alt=""
+              />
+              <a href="#education1">education</a>
+            </div>
+            <div class="widget-header">
+              <img src="./styles/components/src/Vector.svg" alt="" />
+              <span>contacts</span>
+            </div>
+            <div class="widget-category" id="email">
+              <img src="./styles/components/src/mail-icon.svg" alt="" />
+              <a href="mailto:nickchirgin@gmail.com">nickchirgin</a>
+            </div>
+          </div>
+        </aside>
+        <div class="app-content">
+          <div class="ultra-header">
+            <div class="info-block--header">
+              <div id="tab">personal-info</div>
+              <img src="./styles/components/src/close-icon.svg" />
+            </div>
+            <div class="info-block--header"></div>
+          </div>
+          <div class="info-block">
+            <div class="info">
+              <ol id="bio1">
+                <li>/**</li>
+                <li>* My name is Nick and I'm a web-developer</li>
+                <li>* with 6 months of experience in freelance python</li>
+                <li>* development. Most of my work was</li>
+                <li>* interacting with established APIs or writing</li>
+                <li>* my own in FastAPI and writing some scripts. But</li>
+                <li>* I have a huge interest in Javascript and GO</li>
+                <li>* fields. Currently looking for a front-end /</li>
+                <li>* fullstack job with nodeJS or GO on backend.</li>
+                <li>*/</li>
+              </ol>
+              <div class="space"></div>
+              <ol id="interests1">
+                <li>/**</li>
+                <li>* My 2 biggest passions are gaming</li>
+                <li>* and business.</li>
+                <li>* In my spare gaming time i mostly play</li>
+                <li>* FPS games such as CS:GO, Valorant.</li>
+                <li>* In both of those games i reached the</li>
+                <li>* highest rank possible, so I would say</li>
+                <li>* I'm pretty good at videogames:D</li>
+                <li>* And for the business side of things,</li>
+                <li>* since I was a kid, I was always fascinated</li>
+                <li>* by people who started big company from</li>
+                <li>* almost nothing. So in my free time I like</li>
+                <li>* to read biographys of a big achievers and</li>
+                <li>* read/learn about tech and marketing fields.</li>
+                <li>*/</li>
+              </ol>
+              <div class="space"></div>
+              <ol id="education1">
+                <li>/**</li>
+                <li>* I am a huge believer in life-long learning</li>
+                <li>* and I think that's one of the reasons why</li>
+                <li>* I'm quick/good learner. If we talk about</li>
+                <li>* formal education:</li>
+                <li>* I studied robotics engineering in the</li>
+                <li>* Peter the Great St.Petersburg Polytechnic</li>
+                <li>* University. Things that i've learnt:</li>
+                <li>* math(linear algerbra, statistics, calculus),</li>
+                <li>* basics of programming in C++ and java,</li>
+                <li>* working in a team environment with other</li>
+                <li>* students and public speaking. But after 2</li>
+                <li>* years of studying I decided to dropout.</li>
+                <li>*/</li>
+              </ol>
+              <div class="space"></div>
             </div>
 
-            <div class="github-block">
-              <p class="desc">// find my profile on Github:</p>
-              <p class="github-link">
-                <span class="blue">const </span
-                ><span class="green">githubLink</span> =
-                <span class="orange"
-                  ><a href="https://github.com/NickChirgin"
-                    >"https://github.com/NickChirgin"</a
-                  ></span
-                >
-              </p>
-            </div>
-          </section>
-          <section class="snake-game">
-            <div class="shadow">
-              <div class="green-shadow"></div>
-              <div class="blue-shadow"></div>
-              <div class="images">
-                <span style="--i: 1"
-                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
-                /></span>
-                <span style="--i: 2"
-                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
-                /></span>
-                <span style="--i: 3"
-                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
-                /></span>
-                <span style="--i: 4"
-                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
-                /></span>
-                <span style="--i: 5"
-                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
-                /></span>
-                <span style="--i: 6"
-                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
-                /></span>
-                <span style="--i: 7"
-                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
-                /></span>
-                <span style="--i: 8"
-                  ><img src="./styles/components/src/code-snippet 2.svg" alt=""
-                /></span>
+            <div class="code-snippet-block">
+              <div class="app-content__header"></div>
+              <div class="code-snippet">//Code snippet showcase:</div>
+              <div class="img">
+                <img src="./styles/components/src/Snippet-1.svg" />
               </div>
+              <div class="img">
+                <img src="./styles/components/src/Snippet-2.svg" />
+              </div>
+              <div class="scroll"></div>
             </div>
-          </section>
+          </div>
         </div>
       </main>
       <footer class="app-footer">
@@ -125,6 +208,7 @@
         </nav>
       </footer>
     </div>
-    <script src="app.js"></script>
+
+    <script src="poinetAbout.js"></script>
   </body>
 </html>
