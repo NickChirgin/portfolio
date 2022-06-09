@@ -165,7 +165,7 @@ h2 {
   position: relative;
   width: 60%;
   height: 80%;
-  top: -45rem;
+  top: -49rem;
   left: 7rem;
   transform-origin: center;
 
@@ -198,8 +198,6 @@ h2 {
   left: 0;
   width: 100%;
   height: auto;
-  opacity: 2;
-  z-index: 5;
   object-fit: cover;
 }
 

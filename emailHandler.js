@@ -17,10 +17,10 @@ const snakeGame = document.querySelector('.snake-game')
 const appMain = document.querySelector('.app-main')
 const form = document.querySelector('form')
 
-var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today.getFullYear();
+let today = new Date();
+let dd = String(today.getDate()).padStart(2, '0');
+let mm = String(today.getMonth() + 1).padStart(2, '0'); 
+let yyyy = today.getFullYear();
 
 today = mm + '/' + dd + '/' + yyyy;
 
@@ -35,7 +35,7 @@ myForm.addEventListener('submit', e =>{
     const formData = new FormData(myForm);
     let formDataObject = Object.fromEntries(formData.entries());
     let formDataJson = JSON.stringify(formDataObject)
-    fetch('http://127.0.0.1:8000/api/forma', {
+    fetch('/api/forma', {
         method: 'post',
         headers: {
             "Accept": "application/json",
