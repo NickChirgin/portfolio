@@ -294,6 +294,7 @@ input::placeholder {
 @media (max-width: 650px) {
   .app {
     width: 90vw;
+    height: 95vh;
   }
   form {
     width: 70%;

@@ -93,6 +93,7 @@ a:hover {
 @media (max-width: 650px) {
   .app {
     width: 90vw;
+    height: 95vh;
   }
   .info-block li {
     font-size: 14px;
